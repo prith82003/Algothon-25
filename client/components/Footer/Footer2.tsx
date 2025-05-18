@@ -6,7 +6,7 @@ import { SocialIcon } from "react-social-icons";
 
 import Image from "next/image";
 import Logo from "../../public/fintech-logo.svg";
-import SIGLOGO from "../../public/sig-logo.svg";
+import SIGLOGO from "../../public/sig-logo.png";
 import { events } from "../../events";
 
 const useStyles = createStyles((theme) => ({
@@ -73,7 +73,7 @@ const Footer2 = () => {
           <Modal opened={rulesModalOpened} onClose={closeRulesModal} withCloseButton={false} centered>
             <Text>Rules and Docs are currently unavailable.</Text>
             <Text color="dimmed" fz="sm">
-              The rules and documentation site will be published when the competition is launched on June 19th.
+              The rules and documentation site will be published when the competition is launched on June 12th.
             </Text>
           </Modal>
           {rulesAndDocsAvailable ? (
@@ -99,7 +99,7 @@ const Footer2 = () => {
           <SocialIcon url="https://www.linkedin.com/company/unswfintechsoc/" bgColor={"#FFF"} />
           <SocialIcon url="https://unswfintech.com/" bgColor={"#FFF"} />
         </div>
-        <Image src={SIGLOGO} width={200} alt="SIG logo" />
+        <Image src={SIGLOGO} width={350} alt="SIG logo" />
       </div>
     </div>
   );
