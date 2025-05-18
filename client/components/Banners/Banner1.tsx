@@ -97,7 +97,7 @@ export const Banner1 = () => {
       {/* <Image priority src={bg} alt="bg" fill className={classes.bg} /> */}
       <div>
         <div className={classes.collabImage}>
-          <Image width={300} priority src={fintechxsig} alt="fintech and sig" />
+          <Image width={400} priority src={fintechxsig} alt="fintech and sig" />
         </div>
         <Title className={classes.title + " " + OuterLimitsExtUpright.className} order={1}>
           Algothon
