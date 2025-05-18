@@ -59,7 +59,6 @@ const useStyles = createStyles((theme) => ({
   },
   countdownCard: {
     borderRadius: theme.radius.lg,
-    backgroundColor: "#4c6fc0",
     padding: theme.spacing.sm,
     width: "80%",
     margin: "auto",
