@@ -10,7 +10,6 @@ const EventTimeline = dynamic(() => import("./EventTimeline").then((mod) => mod.
 const useStyles = createStyles((theme) => ({
   timelineContainer: {
     marginTop: theme.spacing.xl,
-    color: "white",
     padding: "3rem 5rem",
     position: "relative",
     display: "flex",

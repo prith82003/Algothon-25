@@ -43,8 +43,7 @@ const useStyles = createStyles((theme) => ({
       fontSize: "3rem",
     },
     color: "rgb(255, 255, 255, .9)",
-    textShadow:
-      "-3px 0px 0px rgb(255, 255, 255, .5), -6px 2px 0px rgb(255, 255, 255, .2)",
+    textShadow: "-3px 0px 0px rgb(255, 255, 255, .5), -6px 2px 0px rgb(255, 255, 255, .2)",
   },
   registerInfo: {
     marginTop: theme.spacing.xl,
@@ -60,7 +59,7 @@ const useStyles = createStyles((theme) => ({
   },
   countdownCard: {
     borderRadius: theme.radius.lg,
-    backgroundColor: "rgb(11, 97, 98, .95)",
+    backgroundColor: "#7e91d0",
     padding: theme.spacing.sm,
     width: "80%",
     margin: "auto",
@@ -100,16 +99,10 @@ export const Banner1 = () => {
         <div className={classes.collabImage}>
           <Image width={300} priority src={fintechxsig} alt="fintech and sig" />
         </div>
-        <Title
-          className={classes.title + " " + OuterLimitsExtUpright.className}
-          order={1}
-        >
+        <Title className={classes.title + " " + OuterLimitsExtUpright.className} order={1}>
           Algothon
         </Title>
-        <Title
-          className={classes.title + " " + OuterLimitsExtUpright.className}
-          order={1}
-        >
+        <Title className={classes.title + " " + OuterLimitsExtUpright.className} order={1}>
           2025
         </Title>
         <div className={classes.registerInfo}>
@@ -130,31 +123,14 @@ export const Banner1 = () => {
                   Register as Individual
                 </Button>
             </Link> */}
-            
-            <Link
-              className={classes.noUnderlineLink}
-              href="https://wiki.algothon.au/5submission/"
-            >
-              <Button
-                fullWidth
-                variant="white"
-                c="black"
-                size="lg"
-                mt="sm"
-                radius={0}
-              >
+
+            <Link className={classes.noUnderlineLink} href="https://wiki.algothon.au/5submission/">
+              <Button fullWidth variant="white" c="black" size="lg" mt="sm" radius={0}>
                 How to submit
               </Button>
             </Link>
             <Link className={classes.noUnderlineLink} href="/leaderboard">
-              <Button
-                fullWidth
-                variant="white"
-                c="black"
-                size="lg"
-                mt="sm"
-                radius={0}
-              >
+              <Button fullWidth variant="white" c="black" size="lg" mt="sm" radius={0}>
                 Check how your team went →
               </Button>
             </Link>
@@ -184,9 +160,7 @@ const countdowns = [
   },
   {
     eventLabel: "Final Presentations",
-    countdownTo: new Date(
-      "Sat Aug 07 2025 14:00:00 GMT+1000 (Australian Eastern Standard Time)"
-    ),
+    countdownTo: new Date("Sat Aug 07 2025 14:00:00 GMT+1000 (Australian Eastern Standard Time)"),
   },
 ];
 
@@ -245,9 +219,7 @@ const Countdown = () => {
         </div>
         <div>
           <div className={classes.time}>
-            <Text fw={700}>
-              {formatTime(Math.floor(hours / 1000 / 60 / 60))}
-            </Text>
+            <Text fw={700}>{formatTime(Math.floor(hours / 1000 / 60 / 60))}</Text>
           </div>
           <Text fz="xs" color="white">
             Hrs
@@ -276,5 +248,4 @@ const Countdown = () => {
 
 const formatTime = (time: number) => time.toString().padStart(2, "0");
 
-const getNextEvent = () =>
-  countdowns.find((countdown) => countdown.countdownTo.getTime() >= Date.now());
+const getNextEvent = () => countdowns.find((countdown) => countdown.countdownTo.getTime() >= Date.now());
