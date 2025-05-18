@@ -12,83 +12,82 @@ import Link from "next/link";
 import { Leaderboard } from "../Leaderboard";
 
 const useStyles = createStyles((theme) => ({
-    banner1: {
-      padding: "3rem 5rem",
-      display: "flex",
-      minHeight: "35rem",
-      alignItems: "center",
-      marginTop: theme.spacing.xs,
+  banner1: {
+    padding: "3rem 5rem",
+    display: "flex",
+    minHeight: "35rem",
+    alignItems: "center",
+    marginTop: theme.spacing.xs,
+    justifyContent: "center",
+    textAlign: "center",
+    position: "relative",
+    [`@media (max-width: ${theme.breakpoints.md})`]: {
+      margin: `0`,
+      flexDirection: "column",
       justifyContent: "center",
       textAlign: "center",
-      position: "relative",
-      [`@media (max-width: ${theme.breakpoints.md})`]: {
-        margin: `0`,
-        flexDirection: "column",
-        justifyContent: "center",
-        textAlign: "center",
-        minHeight: "30rem",
-        padding: "2rem 2rem",
-      },
+      minHeight: "30rem",
+      padding: "2rem 2rem",
     },
-    cta: {
-      display: "flex",
-      justifyContent: "center",
-      gap: `0px ${theme.spacing.xs}`,
-      [`@media (max-width: ${theme.breakpoints.md})`]: {
-        flexDirection: "column",
-      },
+  },
+  cta: {
+    display: "flex",
+    justifyContent: "center",
+    gap: `0px ${theme.spacing.xs}`,
+    [`@media (max-width: ${theme.breakpoints.md})`]: {
+      flexDirection: "column",
     },
-    title: {
-      fontSize: "4rem",
-      [`@media (max-width: ${theme.breakpoints.md})`]: {
-        fontSize: "3rem",
-      },
-      color: "rgb(255, 255, 255, .9)",
-      textShadow:
-        "-3px 0px 0px rgb(255, 255, 255, .5), -6px 2px 0px rgb(255, 255, 255, .2)",
+  },
+  title: {
+    fontSize: "4rem",
+    [`@media (max-width: ${theme.breakpoints.md})`]: {
+      fontSize: "3rem",
     },
-    registerInfo: {
-      marginTop: theme.spacing.xl,
+    color: "rgb(255, 255, 255, .9)",
+    textShadow: "-3px 0px 0px rgb(255, 255, 255, .5), -6px 2px 0px rgb(255, 255, 255, .2)",
+  },
+  registerInfo: {
+    marginTop: theme.spacing.xl,
+  },
+  bg: {
+    zIndex: -11,
+    borderRadius: theme.radius.xl,
+    objectFit: "cover",
+    [`@media (max-width: ${theme.breakpoints.md})`]: {
+      borderRadius: "0px",
     },
-    bg: {
-      zIndex: -11,
-      borderRadius: theme.radius.xl,
-      objectFit: "cover",
-      [`@media (max-width: ${theme.breakpoints.md})`]: {
-        borderRadius: "0px",
-      },
+  },
+  countdownCard: {
+    borderRadius: theme.radius.lg,
+    backgroundColor: "#4c6fc0",
+    padding: theme.spacing.sm,
+    width: "80%",
+    margin: "auto",
+    [`@media (max-width: ${theme.breakpoints.md})`]: {
+      width: "100%",
     },
-    countdownCard: {
-      borderRadius: theme.radius.lg,
-      backgroundColor: "rgb(11, 97, 98, .95)",
-      padding: theme.spacing.sm,
-      width: "80%",
-      margin: "auto",
-      [`@media (max-width: ${theme.breakpoints.md})`]: {
-        width: "100%",
-      },
-    },
-    countdown: {
-      display: "flex",
-      justifyContent: "center",
-      gap: theme.spacing.xs,
-      position: "relative",
-      bottom: "35px",
-    },
-    time: {
-      backgroundColor: "white",
-      padding: theme.spacing.sm,
-      borderRadius: theme.radius.md,
-      width: "3rem",
-      height: "3rem",
-    },
-    collabImage: {
-      marginBottom: theme.spacing.xl,
-    },
-    noUnderlineLink: {
-      textDecoration: "none",
-    },
-  }));
+  },
+  countdown: {
+    display: "flex",
+    justifyContent: "center",
+    gap: theme.spacing.xs,
+    position: "relative",
+    bottom: "35px",
+  },
+  time: {
+    backgroundColor: "white",
+    padding: theme.spacing.sm,
+    borderRadius: theme.radius.md,
+    width: "3rem",
+    height: "3rem",
+  },
+  collabImage: {
+    marginBottom: theme.spacing.xl,
+  },
+  noUnderlineLink: {
+    textDecoration: "none",
+  },
+}));
 
 export const Banner1 = () => {
   const { classes } = useStyles();
@@ -100,16 +99,10 @@ export const Banner1 = () => {
         <div className={classes.collabImage}>
           <Image width={300} priority src={fintechxsig} alt="fintech and sig" />
         </div>
-        <Title
-          className={classes.title + " " + OuterLimitsExtUpright.className}
-          order={1}
-        >
+        <Title className={classes.title + " " + OuterLimitsExtUpright.className} order={1}>
           Algothon
         </Title>
-        <Title
-          className={classes.title + " " + OuterLimitsExtUpright.className}
-          order={1}
-        >
+        <Title className={classes.title + " " + OuterLimitsExtUpright.className} order={1}>
           2025
         </Title>
         <div className={classes.registerInfo}>
@@ -130,19 +123,9 @@ export const Banner1 = () => {
                   Register as Individual
                 </Button>
             </Link> */}
-            
-            <Link
-              className={classes.noUnderlineLink}
-              href="https://wiki.algothon.au/5submission/"
-            >
-              <Button
-                fullWidth
-                variant="white"
-                c="black"
-                size="lg"
-                mt="sm"
-                radius={0}
-              >
+
+            <Link className={classes.noUnderlineLink} href="https://wiki.algothon.au/5submission/">
+              <Button fullWidth variant="white" c="black" size="lg" mt="sm" radius={0}>
                 Past Resources
               </Button>
             </Link>
@@ -235,7 +218,9 @@ const Countdown = () => {
       <div className={classes.countdown}>
         <div>
           <div className={classes.time}>
-            <Text color="black" fw={700}>{formatTime(Math.floor(days))}</Text>
+            <Text color="black" fw={700}>
+              {formatTime(Math.floor(days))}
+            </Text>
           </div>
           <Text fz="xs" color="white">
             Days
@@ -243,7 +228,9 @@ const Countdown = () => {
         </div>
         <div>
           <div className={classes.time}>
-            <Text color="black" fw={700}>{formatTime(Math.floor(hours / 1000 / 60 / 60))}</Text>
+            <Text color="black" fw={700}>
+              {formatTime(Math.floor(hours / 1000 / 60 / 60))}
+            </Text>
           </div>
           <Text fz="xs" color="white">
             Hrs
@@ -251,7 +238,9 @@ const Countdown = () => {
         </div>
         <div>
           <div className={classes.time}>
-            <Text color="black" fw={700}>{formatTime(Math.floor(minutes / 1000 / 60))}</Text>
+            <Text color="black" fw={700}>
+              {formatTime(Math.floor(minutes / 1000 / 60))}
+            </Text>
           </div>
           <Text fz="xs" color="white">
             Mins
@@ -259,7 +248,9 @@ const Countdown = () => {
         </div>
         <div>
           <div className={classes.time}>
-            <Text color="black" fw={700}>{formatTime(Math.floor(seconds / 1000))}</Text>
+            <Text color="black" fw={700}>
+              {formatTime(Math.floor(seconds / 1000))}
+            </Text>
           </div>
           <Text fz="xs" color="white">
             Secs
