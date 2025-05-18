@@ -1,12 +1,6 @@
 import { useMemo } from "react";
 import Link from "next/link";
-import {
-  createStyles,
-  Title,
-  Text,
-  Modal,
-  UnstyledButton,
-} from "@mantine/core";
+import { createStyles, Title, Text, Modal, UnstyledButton } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { SocialIcon } from "react-social-icons";
 
@@ -22,7 +16,7 @@ const useStyles = createStyles((theme) => ({
     gap: `0px ${theme.spacing.xl}`,
     borderRadius: `${theme.radius.xl} ${theme.radius.xl} 0px 0px`,
     padding: "3rem 2rem",
-    backgroundColor: "rgb(1, 28, 74, .95)",
+    backgroundColor: "#4c6fc0",
     [`@media (max-width: ${theme.breakpoints.md})`]: {
       padding: "2rem 2rem",
       borderRadius: "0px",
@@ -59,13 +53,9 @@ const useStyles = createStyles((theme) => ({
 const Footer2 = () => {
   const { classes } = useStyles();
 
-  const rulesAndDocsAvailable = useMemo(
-    () => Date.now() >= new Date(events[4].date).getTime(),
-    []
-  );
+  const rulesAndDocsAvailable = useMemo(() => Date.now() >= new Date(events[4].date).getTime(), []);
 
-  const [rulesModalOpened, { close: closeRulesModal, open: openRulesModal }] =
-    useDisclosure(false);
+  const [rulesModalOpened, { close: closeRulesModal, open: openRulesModal }] = useDisclosure(false);
   return (
     <div className={classes.card}>
       <div className={classes.links}>
@@ -80,23 +70,14 @@ const Footer2 = () => {
           </Link>
         </div> */}
         <div>
-          <Modal
-            opened={rulesModalOpened}
-            onClose={closeRulesModal}
-            withCloseButton={false}
-            centered
-          >
+          <Modal opened={rulesModalOpened} onClose={closeRulesModal} withCloseButton={false} centered>
             <Text>Rules and Docs are currently unavailable.</Text>
             <Text color="dimmed" fz="sm">
-              The rules and documentation site will be published when the
-              competition is launched on June 19th.
+              The rules and documentation site will be published when the competition is launched on June 19th.
             </Text>
           </Modal>
           {rulesAndDocsAvailable ? (
-            <Link
-              style={{ textDecoration: "none" }}
-              href="https://wiki.algothon.au/"
-            >
+            <Link style={{ textDecoration: "none" }} href="https://wiki.algothon.au/">
               <Title mb="xl" color="white">
                 Rules & Docs
               </Title>
@@ -113,18 +94,9 @@ const Footer2 = () => {
       <div className={classes.otherLogos}>
         <Image src={Logo} width={200} alt="fintech logo" />
         <div className={classes.socials}>
-          <SocialIcon
-            url="https://www.instagram.com/unswfintechsoc/"
-            bgColor={"#FFF"}
-          />
-          <SocialIcon
-            url="https://www.facebook.com/unswfintechsoc"
-            bgColor={"#FFF"}
-          />
-          <SocialIcon
-            url="https://www.linkedin.com/company/unswfintechsoc/"
-            bgColor={"#FFF"}
-          />
+          <SocialIcon url="https://www.instagram.com/unswfintechsoc/" bgColor={"#FFF"} />
+          <SocialIcon url="https://www.facebook.com/unswfintechsoc" bgColor={"#FFF"} />
+          <SocialIcon url="https://www.linkedin.com/company/unswfintechsoc/" bgColor={"#FFF"} />
           <SocialIcon url="https://unswfintech.com/" bgColor={"#FFF"} />
         </div>
         <Image src={SIGLOGO} width={200} alt="SIG logo" />
