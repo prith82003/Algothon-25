@@ -38,7 +38,7 @@ const useStyles = createStyles((theme) => ({
     position: "relative",
     padding: theme.spacing.lg,
     borderRadius: theme.radius.xl,
-    backgroundColor: theme.colors.fintechRed[4],
+    backgroundColor: "#4c6fc0",
     [`@media (max-width: ${theme.breakpoints.md})`]: {
       width: "100%",
       marginBottom: theme.spacing.xl,
@@ -62,17 +62,16 @@ export const Banner2 = () => {
         <div className={classes.promo}>
           <Title order={2}>Get ready for lift-off… </Title>
           <Text fw={500} mt="md" fz="lg">
-            FinTech Society and Susquehanna are thrilled to announce: 🚀🚀 Algothon 2025! 🚀🚀 
-            UNSW Fintech Society&apos;s annual algorithmic trading competition is back for its sixth year, 
-            bigger and better than ever! Immerse yourself in the realms of market making and 
-            algorithmic trading with one of the globe&apos;s most influential quantitative trading 
-            firms. Challenge your coding skills and push your knowledge boundaries with hands-on experiences. 
-            Whether you team up with friends or go solo, this is your chance to showcase your creativity, 
-            detailed analysis, and Susquehanna-level expertise in ensuring competitive market prices. Register 
-            now for a shot at lucky door prizes and substantial cash rewards for the top three winners, 
-            worth thousands of dollars! Prepare for the ultimate challenge and compete for the grand 
-            first-place prize of five thousand dollars! Anticipate an unforgettable journey where you&apos;ll 
-            forge lasting connections and create invaluable memories!
+            FinTech Society and Susquehanna are thrilled to announce: 🚀🚀 Algothon 2025! 🚀🚀 UNSW Fintech
+            Society&apos;s annual algorithmic trading competition is back for its sixth year, bigger and better than
+            ever! Immerse yourself in the realms of market making and algorithmic trading with one of the globe&apos;s
+            most influential quantitative trading firms. Challenge your coding skills and push your knowledge boundaries
+            with hands-on experiences. Whether you team up with friends or go solo, this is your chance to showcase your
+            creativity, detailed analysis, and Susquehanna-level expertise in ensuring competitive market prices.
+            Register now for a shot at lucky door prizes and substantial cash rewards for the top three winners, worth
+            thousands of dollars! Prepare for the ultimate challenge and compete for the grand first-place prize of five
+            thousand dollars! Anticipate an unforgettable journey where you&apos;ll forge lasting connections and create
+            invaluable memories!
           </Text>
         </div>
         <div className={classes.prizes}>

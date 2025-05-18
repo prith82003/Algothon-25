@@ -3,12 +3,9 @@ import Image from "next/image";
 import { createStyles } from "@mantine/core";
 import programmer from "../../public/programmer.png";
 
-const EventTimeline = dynamic(
-  () => import("./EventTimeline").then((mod) => mod.EventTimeline),
-  {
-    ssr: false,
-  }
-);
+const EventTimeline = dynamic(() => import("./EventTimeline").then((mod) => mod.EventTimeline), {
+  ssr: false,
+});
 
 const useStyles = createStyles((theme) => ({
   timelineContainer: {
@@ -58,12 +55,7 @@ export const AlgoTimeline = () => {
         <Image src={programmer} width={300} alt="programmer" />
       </div>
       <div className={classes.mobileAstronaut}>
-        <Image
-          className={classes.astro}
-          src={programmer}
-          width={100}
-          alt="programmer"
-        />
+        <Image className={classes.astro} src={programmer} width={100} alt="programmer" />
       </div>
     </div>
   );
