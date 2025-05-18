@@ -53,6 +53,7 @@ const useStyles = createStyles((theme) => ({
     zIndex: -11,
     borderRadius: theme.radius.xl,
     objectFit: "cover",
+    opacity: 0.0,
     [`@media (max-width: ${theme.breakpoints.md})`]: {
       borderRadius: "0px",
     },
@@ -109,7 +110,7 @@ export const Banner1 = () => {
           className={classes.title + " " + OuterLimitsExtUpright.className}
           order={1}
         >
-          2024
+          2025
         </Title>
         <div className={classes.registerInfo}>
           <Countdown />
