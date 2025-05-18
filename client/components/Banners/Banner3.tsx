@@ -55,9 +55,9 @@ export const Banner3 = () => {
             Over several weeks, be prepared to dive into a dynamic, multi-stage 
             competition! Your aim will be to build a sophisticated trading 
             algorithm designed to maximize profits in our simulated 
-            trading environment. Compete solo or in teams of two to 
-            three, acquiring essential skills through FinTech Soc’s 
-            custom technical workshops in collaboration with SIG. 
+            trading environment. Compete in teams of two to 
+            four, acquiring essential skills through FinTech Society’s 
+            custom technical workshops in collaboration with Susquehanna. 
             The contest starts with an introductory phase, allowing 
             you to brainstorm and establish your solution&apos;s foundation. 
             As the competition progresses, you&apos;ll enhance your model 
@@ -65,8 +65,8 @@ export const Banner3 = () => {
             leaderboard. An interim update offers a chance to tweak and 
             perfect your algorithm. The leading finalists will have a week 
             to polish their solutions before presenting their comprehensive 
-            technical journey to a panel at the SIG Sydney office. If you&apos;re 
-            outside Sydney, don&apos;t worry—SIG and FinTech Soc will cover your travel. 
+            technical journey to a panel at the Susquehanna Sydney office. If you&apos;re 
+            outside Sydney, don&apos;t worry—Susquehanna and FinTech Society will cover your travel. 
             Ready to take on the challenge? Let’s start trading!
           </Text>
         </div>
