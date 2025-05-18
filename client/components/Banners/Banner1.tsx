@@ -95,7 +95,7 @@ export const Banner1 = () => {
 
   return (
     <div className={classes.banner1}>
-      <Image priority src={bg} alt="bg" fill className={classes.bg} />
+      {/* <Image priority src={bg} alt="bg" fill className={classes.bg} /> */}
       <div>
         <div className={classes.collabImage}>
           <Image width={300} priority src={fintechxsig} alt="fintech and sig" />
