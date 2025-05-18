@@ -29,23 +29,10 @@ export const Navbar = () => {
   return (
     <div className={classes.navbar}>
       <div>
-        <Text
-          className={classes.navbarItem}
-          component="a"
-          href="#timeline"
-          fz="lg"
-          fw={700}
-          mr="md"
-        >
+        <Text className={classes.navbarItem} component="a" href="#timeline" fz="lg" fw={700} mr="md">
           Timeline
         </Text>
-        <Text
-          className={classes.navbarItem}
-          component="a"
-          href="#faq"
-          fz="lg"
-          fw={700}
-        >
+        <Text className={classes.navbarItem} component="a" href="#faq" fz="lg" fw={700}>
           FAQ
         </Text>
       </div>
@@ -55,12 +42,7 @@ export const Navbar = () => {
         rel="noopener"
         target="_blank"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 40 40"
-          height="2rem"
-          width="2rem"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="2rem" width="2rem">
           <linearGradient
             id="a"
             x1="-277.375"
