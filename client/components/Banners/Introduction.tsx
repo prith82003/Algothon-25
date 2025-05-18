@@ -38,7 +38,7 @@ const useStyles = createStyles((theme) => ({
     position: "relative",
     padding: theme.spacing.lg,
     borderRadius: theme.radius.xl,
-    backgroundColor: "#4c6fc0",
+    backgroundColor: "#193867",
     [`@media (max-width: ${theme.breakpoints.md})`]: {
       width: "100%",
       marginBottom: theme.spacing.xl,
