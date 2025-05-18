@@ -62,13 +62,13 @@ export const Banner2 = () => {
         <div className={classes.promo}>
           <Title order={2}>Get ready for lift-off… </Title>
           <Text fw={500} mt="md" fz="lg">
-            FinTech Soc and SIG are thrilled to announce: 🚀🚀 Algothon 2024! 🚀🚀 
+            FinTech Society and Susquehanna are thrilled to announce: 🚀🚀 Algothon 2024! 🚀🚀 
             UNSW Fintech Society&apos;s annual algorithmic trading competition is back for its fifth year, 
             bigger and better than ever! Immerse yourself in the realms of market making and 
             algorithmic trading with one of the globe&apos;s most influential quantitative trading 
             firms. Challenge your coding skills and push your knowledge boundaries with hands-on experiences. 
             Whether you team up with friends or go solo, this is your chance to showcase your creativity, 
-            detailed analysis, and SIG-level expertise in ensuring competitive market prices. Register 
+            detailed analysis, and Susquehanna-level expertise in ensuring competitive market prices. Register 
             now for a shot at lucky door prizes and substantial cash rewards for the top three winners, 
             worth thousands of dollars! Prepare for the ultimate challenge and compete for the grand 
             first-place prize of five thousand dollars! Anticipate an unforgettable journey where you&apos;ll 
@@ -83,13 +83,13 @@ export const Banner2 = () => {
             1st prize: <b>$5000</b>
           </Text>
           <Text color="white" fz="xl">
-            2nd prize: <b>$2000</b>
+            2nd prize: <b>$2500</b>
           </Text>
           <Text color="white" fz="xl">
             3rd prize: <b>$1000</b>
           </Text>
           <Text color="white" fz="xs" mt="sm">
-            * Max 2-3 people per team, prizes are total amounts given to teams 
+            * Max 2-4 people per team, prizes are total amounts given to individuals
           </Text>
         </div>
       </div>
