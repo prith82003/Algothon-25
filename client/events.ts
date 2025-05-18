@@ -1,38 +1,38 @@
 export const events: { name: string; date: string }[] = [
   {
-    name: "Event Registrations Open",
-    date: new Date("27 May 2024").toISOString(),
+    name: "Pre Launch Event and Workshop 1",
+    date: new Date("5 June 2025").toISOString(),
   },
   {
-    name: "Workshop 1",
-    date: new Date("5 June 2024").toISOString(),
+    name: "Official Event Launch and Workshop 2",
+    date: new Date("12 June 2025").toISOString(),
   },
   {
     name: "Event Registrations Close",
-    date: new Date("17 June 2024").toISOString(),
+    date: new Date("13 June 2025").toISOString(),
   },
   {
-    name: "Algothon Launch, Workshop 2 and Q&A",
-    date: new Date("2024-06-19T07:00:00.000Z").toISOString(),
+    name: "Submission Deadline for Interim Update",
+    date: new Date("30 June 2025").toISOString(),
   },
   {
-    name: "Leaderboard Updates Due",
-    date: new Date("3 July 2024").toISOString(),
+    name: "Mid-Competition Event - Interim Leaderboard Update 1",
+    date: new Date("2 July 2025").toISOString(),
   },
   {
-    name: "General Round Closes",
-    date: new Date("11 July 2024").toISOString(),
+    name: "General Round Submissions Due",
+    date: new Date("14 July 2025").toISOString(),
   },
   {
-    name: "Finalists Announced",
-    date: new Date("17 July 2024").toISOString(),
+    name: "Finalists Announcement",
+    date: new Date("18 July 2025").toISOString(),
   },
   {
     name: "Final Round Submissions Due",
-    date: new Date("26 July 2024").toISOString(),
+    date: new Date("25 July 2025").toISOString(),
   },
   {
-    name: "Final Presentations at SIG Office",
+    name: "Final Presentations at Susquehanna Office",
     date: new Date("8 August 2024").toISOString(),
   },
 ];
