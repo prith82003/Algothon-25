@@ -19,7 +19,7 @@ const QA: { q: string; a: string }[] = [
   },
   {
     q: "How large can our teams be?",
-    a: "Teams must consist of 2-3 students.",
+    a: "Teams must consist of 2-4 students.",
   },
   {
     q: "Is a finance or coding background required?",
@@ -31,7 +31,7 @@ const QA: { q: string; a: string }[] = [
   },
   {
     q: "Where will the event be held?",
-    a: "The 2024 Algothon will be held online (It is up to your group to complete your submission in your own time). \nWe will have an in-person launch event at UNSW (virtually streamed for out of state participants). \nFinalists will be invited to SIG's Barangaroo office in Sydney for the presentation and closing ceremony. Costs will be paid for if you do not reside in Sydney.",
+    a: "The 2025 Algothon will be held online (It is up to your group to complete your submission in your own time). \nWe will have an in-person launch event at UNSW (virtually streamed for out of state participants). \nFinalists will be invited to SIG's Barangaroo office in Sydney for the presentation and closing ceremony. Costs will be paid for if you do not reside in Sydney.",
   },
 ];
 
