@@ -33,6 +33,6 @@ export const events: { name: string; date: string }[] = [
   },
   {
     name: "Final Presentations at Susquehanna Office",
-    date: new Date("8 August 2024").toISOString(),
+    date: new Date("7 August 2025").toISOString(),
   },
 ];
