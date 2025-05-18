@@ -9,7 +9,7 @@ export const EventTimeline = () => {
       {events.map((event, i) => {
         return (
           <Timeline.Item key={i} title={<Text color="white">{event.name}</Text>}>
-            <Text size="xs" mt={4}>
+            <Text color="white" size="xs" mt={4}>
               {new Date(event.date).toLocaleDateString()}
             </Text>
           </Timeline.Item>
