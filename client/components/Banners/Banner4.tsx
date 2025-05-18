@@ -50,7 +50,7 @@ const useStyles = createStyles((theme) => ({
     gap: `0px ${theme.spacing.xl}`,
     borderRadius: theme.radius.xl,
     padding: "3rem 2rem",
-    backgroundColor: "rgb(1, 28, 74, .95)",
+    backgroundColor: "#2c5fb8",
     [`@media (max-width: ${theme.breakpoints.md})`]: {
       padding: "2rem 2rem",
       borderRadius: "0px",
