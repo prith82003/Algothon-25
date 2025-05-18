@@ -59,6 +59,7 @@ const useStyles = createStyles((theme) => ({
   },
   countdownCard: {
     borderRadius: theme.radius.lg,
+    // backgroundColor: "#4c6fc0",
     padding: theme.spacing.sm,
     width: "80%",
     margin: "auto",
@@ -88,7 +89,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export const Banner1 = () => {
+export const Header = () => {
   const { classes } = useStyles();
 
   return (

@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { createStyles } from "@mantine/core";
 
-import { Banner1, Banner2, Banner3, Banner4 } from "../components/Banners";
+import { Header, Introduction, Challenge, FAQ } from "../components/Banners";
 import { AlgoTimeline } from "../components/Timeline";
 import { Navbar } from "../components/Navbar";
 import Footer2 from "../components/Footer/Footer2";
@@ -23,11 +23,11 @@ const Home: NextPage = () => {
     <>
       <div className={classes.container}>
         <Navbar />
-        <Banner1 />
-        <Banner2 />
-        <Banner3 />
+        <Header />
+        <Introduction />
+        <Challenge />
         <AlgoTimeline />
-        <Banner4 />
+        <FAQ />
         <Footer2 />
       </div>
     </>

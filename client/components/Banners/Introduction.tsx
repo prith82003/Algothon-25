@@ -54,7 +54,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export const Banner2 = () => {
+export const Introduction = () => {
   const { classes } = useStyles();
   return (
     <div className={classes.bannerContainer}>
