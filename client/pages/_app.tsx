@@ -15,7 +15,7 @@ export default function App(props: AppProps) {
   return (
     <>
       <Head>
-        <title>Algothon by SIG & UNSW Fintech </title>
+        <title>Algothon by Susquehanna & UNSW Fintech </title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
