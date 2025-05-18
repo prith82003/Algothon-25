@@ -1,0 +1,1 @@
+ALTER TABLE "submission" ADD COLUMN "marking_output" text;

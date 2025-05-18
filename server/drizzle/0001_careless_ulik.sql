@@ -1,0 +1,1 @@
+ALTER TABLE "marking" ALTER COLUMN "score" SET DATA TYPE numeric(6);

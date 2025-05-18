@@ -1,0 +1,1 @@
+ALTER TABLE "submission" ADD COLUMN "submitted_by" text;
