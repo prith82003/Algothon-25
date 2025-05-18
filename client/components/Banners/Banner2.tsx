@@ -62,8 +62,8 @@ export const Banner2 = () => {
         <div className={classes.promo}>
           <Title order={2}>Get ready for lift-off… </Title>
           <Text fw={500} mt="md" fz="lg">
-            FinTech Society and Susquehanna are thrilled to announce: 🚀🚀 Algothon 2024! 🚀🚀 
-            UNSW Fintech Society&apos;s annual algorithmic trading competition is back for its fifth year, 
+            FinTech Society and Susquehanna are thrilled to announce: 🚀🚀 Algothon 2025! 🚀🚀 
+            UNSW Fintech Society&apos;s annual algorithmic trading competition is back for its sixth year, 
             bigger and better than ever! Immerse yourself in the realms of market making and 
             algorithmic trading with one of the globe&apos;s most influential quantitative trading 
             firms. Challenge your coding skills and push your knowledge boundaries with hands-on experiences. 
