@@ -31,7 +31,7 @@ const QA: { q: string; a: string }[] = [
   },
   {
     q: "Where will the event be held?",
-    a: "The 2025 Algothon will be held online (It is up to your group to complete your submission in your own time). \nWe will have an in-person launch event at UNSW (virtually streamed for out of state participants). \nFinalists will be invited to SIG's Barangaroo office in Sydney for the presentation and closing ceremony. Costs will be paid for if you do not reside in Sydney.",
+    a: "The 2025 Algothon will be held online (It is up to your group to complete your submission in your own time). \nWe will have an in-person launch event at UNSW (virtually streamed for out of state participants). \nFinalists will be invited to Susquehanna's Barangaroo office in Sydney for the presentation and closing ceremony. Costs will be paid for if you do not reside in Sydney.",
   },
 ];
 
@@ -58,20 +58,22 @@ const useStyles = createStyles((theme) => ({
     },
   },
   body: {
-    padding: `0rem ${theme.spacing.xl}`,
+      padding: `0rem ${theme.spacing.xl}`,
     [`@media (max-width: ${theme.breakpoints.md})`]: {
       padding: `0rem`,
     },
   },
-  accordionItem: {
+    accordionItem: {
+    // backgroundColor: "#84bcf0",
     marginTop: `${theme.spacing.xs} !important`,
   },
-  prewrapText: {
-    whiteSpace: "pre-wrap",
+    prewrapText: {
+      whiteSpace: "pre-wrap",
+      color: "black"
   },
 }));
 
-export const Banner4 = () => {
+export const FAQ = () => {
   const { classes } = useStyles();
   return (
     <div id="faq" className={classes.bannerContainer}>
