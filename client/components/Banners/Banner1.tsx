@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from "react";
-import { Title, Text, Button, createStyles, Card } from "@mantine/core";
+import { Title, Text, Button, createStyles, Card, px } from "@mantine/core";
 import Image from "next/image";
 import { OuterLimitsUpright } from "../../fonts";
 import { OuterLimitsExtUpright } from "../../fonts";
@@ -7,6 +7,7 @@ import { OuterLimitsExtUpright } from "../../fonts";
 import { events } from "../../events";
 import bg from "../../public/bg.png";
 import fintechxsig from "../../public/fintechxsig.png";
+import cover from "../../public/cover.png";
 import Link from "next/link";
 import { Leaderboard } from "../Leaderboard";
 
@@ -17,9 +18,12 @@ const useStyles = createStyles((theme) => ({
     minHeight: "35rem",
     alignItems: "center",
     marginTop: theme.spacing.xs,
-    justifyContent: "center",
+        justifyContent: "center",
+    justifySelf: "center",
     textAlign: "center",
-    position: "relative",
+    // backgroundColor: "#215FAC",
+        position: "relative",
+        width: "100%",
     [`@media (max-width: ${theme.breakpoints.md})`]: {
       margin: `0`,
       flexDirection: "column",
@@ -52,7 +56,9 @@ const useStyles = createStyles((theme) => ({
     zIndex: -11,
     borderRadius: theme.radius.xl,
     objectFit: "cover",
-    opacity: 0.0,
+      opacity: .24,
+      backgroundColor: "#215FAC",
+      width: "85vw",
     [`@media (max-width: ${theme.breakpoints.md})`]: {
       borderRadius: "0px",
     },
@@ -82,11 +88,23 @@ const useStyles = createStyles((theme) => ({
     height: "3rem",
   },
   collabImage: {
-    marginBottom: theme.spacing.xl,
+      marginBottom: theme.spacing.xl,
+      //   put it in center
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      position: "relative",
   },
   noUnderlineLink: {
     textDecoration: "none",
-  },
+    },
+    coverImg: {
+        top: "50%",
+        left: "50%",
+        width: "80vw",
+        height: "100%",
+
+        },
 }));
 
 export const Banner1 = () => {
@@ -97,13 +115,17 @@ export const Banner1 = () => {
       <Image priority src={bg} alt="bg" fill className={classes.bg} />
       <div>
         <div className={classes.collabImage}>
-          <Image width={300} priority src={fintechxsig} alt="fintech and sig" />
+          <Image className={classes.coverImg} priority src={cover} alt="fintech and susquehanna" />
         </div>
-        <Title className={classes.title + " " + OuterLimitsExtUpright.className} order={1}>
-          Algothon
+        <Title
+          className={classes.title + " " + OuterLimitsExtUpright.className}
+          order={1}
+        >
         </Title>
-        <Title className={classes.title + " " + OuterLimitsExtUpright.className} order={1}>
-          2025
+        <Title
+          className={classes.title + " " + OuterLimitsExtUpright.className}
+          order={1}
+        >
         </Title>
         <div className={classes.registerInfo}>
           <Countdown />
