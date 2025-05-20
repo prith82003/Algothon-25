@@ -150,24 +150,24 @@ export const Header = () => {
 
 const countdowns = [
   {
-    eventLabel: "Commencing on June 12th (Registrations Close June 13th, 11:59PM)",
-    countdownTo: new Date("2025-07-12T07:00:00.000Z"),
+    eventLabel: "Commencing on June 13th (Registrations Close June 13th, 11:59PM)",
+    countdownTo: new Date("2025-06-13T07:00:00.000Z"),
   },
   {
     eventLabel: "Submissions for Leaderboard Update",
-    countdownTo: new Date("2025-07-30T23:23:59.000Z"),
+    countdownTo: new Date("2025-06-30T23:23:59.000Z"),
   },
   {
     eventLabel: "General Round Closes",
-    countdownTo: new Date("2024-08-14T21:00:00.000Z"),
+    countdownTo: new Date("2024-07-14T21:00:00.000Z"),
   },
   {
     eventLabel: "Final Round Closes",
-    countdownTo: new Date("2024-08-25T21:00:00.000Z"),
+    countdownTo: new Date("2024-07-25T21:00:00.000Z"),
   },
   {
     eventLabel: "Final Presentations",
-    countdownTo: new Date("Sat Aug 07 2025 14:00:00 GMT+1000 (Australian Eastern Standard Time)"),
+    countdownTo: new Date("Thu Aug 07 2025 14:00:00 GMT+1000 (Australian Eastern Standard Time)"),
   },
 ];
 
