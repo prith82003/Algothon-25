@@ -38,7 +38,7 @@ export const Navbar = () => {
       </div>
       <a
         className={classes.event}
-        href="https://www.facebook.com/events/1045470344178258/?acontext=%7B%22event_action_history%22%3A[]%7D"
+        href="https://www.facebook.com/events/s/susquehanna-x-fintech-presents/1378306400089861/?rdid=bqgUXXc9Vp2YElsd&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AZD8es6C5#"
         rel="noopener"
         target="_blank"
       >
